@@ -1,38 +1,53 @@
 .App {
-  text-align: center;
+    display: flex;
+    background-image: url("./images/candy-crush-background.png");
+    width: 100vw;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.board {
+    display: flex;
+    height: 560px;
+    width: 560px;
+    flex-wrap: wrap;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.candy {
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    background-color: lightblue;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper-score {
+    display: flex;
+    justify-content: center;
+    flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin: 50px 50px 50px 0;
+    border-radius:20px;
+    align-items: center;
+    background-color: rgb(240, 216, 109);
+}
+.score h1{
+    font-size:50px;
+    color:rgb(236, 13, 188);
+}
+
+.score img{
+    width: 100%;
 }
